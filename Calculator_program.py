@@ -1,6 +1,6 @@
 print("this is a calculator program !!")
 firstNumber = float(input("enter the first number : "))
-secondNumber = float(input("enter the first number : "))
+secondNumber = float(input("enter the second number : "))
 operation = input("choose the operation you want to perform form '+', '-', '*', '/' : ")
 
 if operation != "+" and operation !="-" and operation != "*" and operation != "/":
@@ -8,10 +8,10 @@ if operation != "+" and operation !="-" and operation != "*" and operation != "/
 else:
     match operation:
         case "*":
-            print("the result is : ", firstNumber*secondNumber)
+            print(f"the result is : {firstNumber * secondNumber}")
         case "+":
-            print("the result is : ", firstNumber+secondNumber)
+            print(f"the result is : {firstNumber + secondNumber}")
         case "-":
-            print("the result is : ", firstNumber-secondNumber)
+            print(f"the result is : {firstNumber - secondNumber}")
         case _ :
-            print("the result is : ", firstNumber/secondNumber)
+            print(f"the result is : {firstNumber/secondNumber}")
